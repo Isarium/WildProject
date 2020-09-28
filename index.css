@@ -1,0 +1,12 @@
+**{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+#logo{
+    display: flex;
+    height: 4vh;
+    width: 5vw;
+}
