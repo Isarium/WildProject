@@ -4,6 +4,17 @@
     padding: 0;
 }
 
+/*body*/
+body{ background-image: url(./Support/img/code-1839406_1920.png);
+}
+
+/*header*/
+
+#header{
+    background-color: aliceblue;
+    position: relative;
+    text-align: center;
+}
 
 #logo{
     display: flex;
@@ -11,3 +22,20 @@
     width: 13vw;
 }
 
+.titrePage{
+    color: rgb(106, 109, 109);
+}
+
+nav{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+li{
+    color: rgb(223, 106, 11);
+}
+
+#corpsDePage{
+    
+}
