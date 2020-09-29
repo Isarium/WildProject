@@ -6,57 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <title>L'atelier du codeur</title>
-    
+
 </head>
 
-    <body>
-        <div id=header>
-            <header>
-            <img id=logo src="./Support/img/Logo.gif" alt="Apprendre pour créer">
-            <H1 class="titrePage">L'atelier du codeur</H1> <!-- Voir pour insérer le logo, la barre de recherche et le lien soumettre-->
-            </header>
+<body>
+    <header>
+        <div id="enTete">
+            <a href="./index.html">
+                <!-- Voir pour insérer le logo, la barre de recherche et le lien soumettre-->
+                <img id=logo src="./Support/img/Logo.gif" alt="Apprendre pour créer">
+                <h1 id="titleMain">L'atelier du codeur</h1>
+            </a>
         </div>
+        <!-- Menu avec des liens cliquables qui ouvrent sur la div, à voir pour mettre en carrousel-->
+        <nav>
+            <ul>
+                <li><a href="">HTML/CSS</a></li>
+                <li><a href="">PROPOSER UN LIEN</a></li>
+                <li><a href="">JAVASCRIPT</a></li>
+                <li><a href="">JAVA</a></li>
+                <li><a href="">GIT/GITHUB</a></li>
+                <li><a href="">OUTILS DEV</a></li>
+                <li><a href="./contact/contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
 
+    </header>
 
-<!-- Menu avec des liens cliquables qui ouvrent sur la div, à voir pour mettre en carrousel-->
-        <div id=menu>
-            <nav> 
-                <li>HTML/CSS</li>
-                <li>PROPOSER UN LIEN</li>
-                <li>JAVASCRIPT</li>
-                <li>JAVA</li>
-                <li>GIT/GITHUB</li>
-                <li>OUTILS DEV</li>
-                <li>CONTACT</li>
-            </nav>
+    <footer>
+        <div id="compteurFooter">
+            <p id=annonceCompteur>Votre site est en ligne depuis : </p> </br>
+            <div class="countup" id="countup1">
+                <span class="timeel days">00</span>
+                <span class="timeel timeRefDays">days</span>
+                <span class="timeel hours">00</span>
+                <span class="timeel timeRefHours">hours</span>
+                <span class="timeel minutes">00</span>
+                <span class="timeel timeRefMinutes">minutes</span>
+                <span class="timeel seconds">00</span>
+                <span class="timeel timeRefSeconds">seconds</span>
+            </div>
         </div>
+        <p>Project by STARK team's in wild code school !!!</p>
+    </footer>
+</body>
+<script type="text/javascript" src="./index.js"></script>
 
-
-<!-- Pour pouvoir afficher les différents paragraphes en fonction du lien cliquer dans la nav-->
-        <div id=corpsDePage> 
-            <p>1er paragraphe</p> </br>
-            <p>2eme paragraphe</p> </br>
-            <p>3eme paragraphe</p> </br>
-        </div> 
-    </body>
-
-
-
-<footer>
-<!--Div du compteur de création du compte-->
-    <p id=annonceCompteur>Votre site est en ligne depuis : </p> </br>
-        <div class="countup" id="countup1">
-            <span class="timeel days">00</span>
-            <span class="timeel timeRefDays">days</span>
-            <span class="timeel hours">00</span>
-            <span class="timeel timeRefHours">hours</span>
-            <span class="timeel minutes">00</span>
-            <span class="timeel timeRefMinutes">minutes</span>
-            <span class="timeel seconds">00</span>
-            <span class="timeel timeRefSeconds">seconds</span>
-          </div>
-    <p>Project by STARK team's in wild code school !!!</p>
-</footer>
-
-    <script type="text/javascript" src="./index.js"></script>
 </html>
