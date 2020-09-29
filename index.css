@@ -35,6 +35,12 @@ nav ul li {
 nav ul li a {
   color: white;
 }
+#listDiv div{
+  padding: 1em;
+  background-color: white;
+  margin: 5px;
+  box-shadow: 0.5em 0.5em 1em grey;
+}
 #compteurFooter {
   display: flex;
   flex-direction: column;
