@@ -5,7 +5,6 @@ const siteList = [
     description: "Je ne sais pas encore ce qu'il fait mais il permet de tester le JS",
     link: "http://untruccommeca.com",
   },
-
 ]
 
 const listDivGlobal = document.getElementById('listDiv');
