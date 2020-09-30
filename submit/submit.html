@@ -4,9 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="app.css">
     <link rel="stylesheet" href="submit.css">
 </head>
 <body>
     
+    <header>
+        <a href="./index.html">
+            <!-- Voir pour insérer le logo, la barre de recherche et le lien soumettre-->
+            <img id=logo src="./Support/img/Logo.gif" alt="Apprendre pour créer">
+            <h1 id="titleMain">L'atelier du codeur</h1>
+        </a>
+        <!-- Menu avec des liens cliquables qui ouvrent sur la div, à voir pour mettre en carrousel-->
+        <nav>
+            <ul>
+                <li><a href="">HTML/CSS</a></li>
+                <li><a href="">PROPOSER UN LIEN</a></li>
+                <li><a href="">JAVASCRIPT</a></li>
+                <li><a href="">JAVA</a></li>
+                <li><a href="">GIT/GITHUB</a></li>
+                <li><a href="">OUTILS DEV</a></li>
+                <li><a href="./contact/contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    
+    <footer>
+        <div id="compteurFooter">
+            <p id=annonceCompteur>Ce projet a vu le jour il y a </p> </br>
+            <div class="countup" id="countup1">
+                <span class="timeel days">00</span>
+                <span class="timeel timeRefDays">days</span>
+                <span class="timeel hours">00</span>
+                <span class="timeel timeRefHours">hours</span>
+                <span class="timeel minutes">00</span>
+                <span class="timeel timeRefMinutes">minutes</span>
+                <span class="timeel seconds">00</span>
+                <span class="timeel timeRefSeconds">seconds</span>
+            </div>
+        </div>
+        <p>Copyright ©2020 by StarkWilder's - Team: Josselin/Ludovic/Cyril</p>
+    </footer>
+
+    <script type="text/javascript" src="submit.js"></script>
+    <script type="text/javascript" src="../compteur.js"></script>
 </body>
 </html>
