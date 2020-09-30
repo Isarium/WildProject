@@ -1,62 +1,8 @@
-@font-face {
-  font-family: "brush";
-  src: url("./Support/brush-script-mt/brush\ script\ mt\ kursiv.ttf"), url("./Support/brush-script-mt/BRUSHSCI.ttf");
-}
-body {
-  margin: 0;
-  font-size: 0.8em;
-  color: black;
-}
-a{
-  color: black;
-}
-header {
-  width: 100vw;
-}
-header a {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-}
-header a img {
-  width: 38vw;
-  height: 100%;
-  margin: 0.5em;
-}
-header a h1 {
-  font-family: "brush", Arial, Helvetica, sans-serif;
-}
+
 #listDiv div {
   padding: 1em;
   background-color: white;
   margin: 5px;
   box-shadow: 0.5em 0.5em 1em grey;
 }
-#compteurFooter {
-  display: flex;
-  flex-direction: column;
-}
-footer {
-  position: absolute;
-  bottom: 0;
-  text-align: center;
-}
-/*compteur de création du site*/
-.compteur {
-  text-align: center;
-  margin-bottom: 5px;
-}
-.countup .timeel {
-  display: inline-block;
-  width: 3em;
-  text-align: center;
-  justify-content: center;
-  background: #151515;
-  color: white;
-  border-radius: 10px 0 0 10px;
-}
-.countup span[class*="timeRef"] {
-  border-radius: 0 10px 10px 0;
-  background: #3e71b4;
-  color: rgb(218, 212, 212);
-}
+
