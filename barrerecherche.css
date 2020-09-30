@@ -1,0 +1,46 @@
+#searchbartop {
+    position:absolute;
+    top:2px; right:2px;
+  }
+  #searchbartop #searchbartopbtn { 
+    position:absolute; 
+    left: -9999px;
+  }
+  #searchbartop #searchbartopbtn + label { 
+    display:inline-block; 
+    cursor:pointer;
+    width:24px; height:24px;
+    line-height:24px;
+    text-align:center;
+    background:#ccc;
+  }
+  #searchbartop #searchbartopbtn:checked + label {
+    background:#ddd; color:#aaa;
+  }
+  #searchbartop form {
+    position:absolute; 
+    top:0; right:24px;
+    display:none;
+  }
+  #searchbartop form > button, #searchbartop form > div {
+    display:table-cell;
+    height:24px;
+  }
+  #searchbartop #searchbartopbtn:checked ~ form {
+    display:table;
+  }
+  #searchbartop form > div > input {
+    width:0;
+  }
+  #searchbartop #searchbartopbtn:checked ~ form > div > input {
+    animation: expand 0.5s ease-in-out 1;
+      animation-fill-mode: forwards;
+  }
+  @keyframes expand {
+    from { width:0; }
+    to   { width:200px; }
+  }
+  
+  button{
+      border-radius: 2px;
+  }
