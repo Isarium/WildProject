@@ -30,3 +30,4 @@ for (let i of siteList) {
   listDivElement.appendChild(listLink);
   listDivGlobal.appendChild(listDivElement);
 }
+
