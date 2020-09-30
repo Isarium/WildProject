@@ -1,4 +1,3 @@
-
 //AFFICHE DE LA DATE DE CREATION DU PROJET
 window.onload = function () {
     // Month Day, Year Hour:Minute:Second, id-of-element-container
