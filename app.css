@@ -13,7 +13,7 @@ body {
   color: black;
   display: flex;
   flex-direction: column;
-  background-color: grey;
+  background-color: rgb(202, 202, 202);
 }
 a {
   color: black;
