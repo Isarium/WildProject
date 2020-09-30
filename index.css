@@ -1,41 +1,32 @@
 @font-face {
   font-family: "brush";
-  src: url("./Support/brush-script-mt/brush\ script\ mt\ kursiv.ttf"),
-    url("./Support/brush-script-mt/BRUSHSCI.ttf");
+  src: url("./Support/brush-script-mt/brush\ script\ mt\ kursiv.ttf"), url("./Support/brush-script-mt/BRUSHSCI.ttf");
 }
 body {
-  margin: 0px;
-  height: 100%;
-  width: 100%;
-}
-a {
-  text-decoration: none;
+  margin: 0;
+  font-size: 0.8em;
   color: black;
 }
-#enTete {
-  font-family: "brush";
+a{
+  color: black;
+}
+header {
+  width: 100vw;
+}
+header a {
   display: flex;
   align-items: center;
+  text-decoration: none;
 }
-#logo {
-  margin-right: 1em;
-  height: 10vh;
+header a img {
+  width: 38vw;
+  height: 100%;
+  margin: 0.5em;
 }
-nav ul {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 100px);
-  text-align: center;
+header a h1 {
+  font-family: "brush", Arial, Helvetica, sans-serif;
 }
-nav ul li {
-  background-color: #3e71b4;
-  list-style-type: none;
-  margin: 0.5vh;
-  padding: 0.5vh;
-}
-nav ul li a {
-  color: white;
-}
-#listDiv div{
+#listDiv div {
   padding: 1em;
   background-color: white;
   margin: 5px;
@@ -46,9 +37,10 @@ nav ul li a {
   flex-direction: column;
 }
 footer {
+  position: absolute;
+  bottom: 0;
   text-align: center;
 }
-
 /*compteur de création du site*/
 .compteur {
   text-align: center;
