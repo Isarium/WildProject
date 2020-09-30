@@ -13,6 +13,7 @@ body {
   color: black;
   display: flex;
   flex-direction: column;
+  background-color: darkmagenta;
 }
 a {
   color: black;
@@ -24,17 +25,22 @@ header a {
   display: flex;
   align-items: center;
   text-decoration: none;
+  background-color: white;
+  border-radius: 40px 0px 0px 40px;
 }
 header a img {
   width: 100px;
   height: 100%;
   margin: 0.5em;
+  margin-left: 30px;
 }
 header a h1 {
   font-family: "brush", Arial, Helvetica, sans-serif;
 }
 nav ul {
   display: grid;
+  align-items: center;
+  justify-items: center;
   grid-gap: 1vw;
   grid-template-columns: repeat(auto-fill, 15vh);
 }
