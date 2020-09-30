@@ -42,7 +42,10 @@ nav ul li {
   text-align: center;
   list-style-type: none;
   padding: 1vh;
-  background-color: #3e71b4;
+}
+nav ul li a img{
+  width: 20px;
+  height: 100%;
 }
 footer {
   margin-top: auto;
