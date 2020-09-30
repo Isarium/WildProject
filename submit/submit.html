@@ -29,6 +29,28 @@
         </nav>
 
     </header>
+
+    <form id="ajoutRessources" action="" method="get">
+
+        <label for="get-Titre de la ressource"> Titre de la ressource :</label>
+            <input type="text" id="get-Titre" name="Titre" placeholder="Donnez un titre" required>
+
+
+            <label for="get-Type">Type de ressource :</label>
+                <input type="text" id="get-Type" name="Type" placeholder="Type de la ressource" required>
+
+
+                <label for="get-Description">Description :</label>
+                    <input type="text" id="get-Description"  name="Description" placeholder="Description de la ressource" required>
+
+
+                    <label for="get-Lien">Lien :</label>
+                        <input type="url" id="get-Lien" name="Lien" placeholder="Http://..."></textarea>
+
+
+                <button id="getDataBtn" type="submit" value="send" >Ajouter la ressource</button>
+<!-- onclick="send()" -->
+</form>
     
     <footer>
         <div id="compteurFooter">
@@ -48,6 +70,7 @@
     </footer>
 
     <script type="text/javascript" src="submit.js"></script>
-    <script type="text/javascript" src="../compteur.js"></script>
+    <script type="text/javascript" src="../compteur.js"></script>    
+    <script type="text/javascript" src="../index.js"></script>
 </body>
 </html>
