@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ajouter un site</title>
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-firestore.js"></script>
     <link rel="stylesheet" href="../app.css">
     <link rel="stylesheet" href="submit.css">
 </head>
@@ -31,21 +33,19 @@
     </header>
 
     <form id="ajoutRessources" action="" method="get">
+        <label class="label" for="getName"> Titre de la ressource :</label>
+        <input type="text" id="getName" name="Titre" placeholder="Donnez un titre" required>
 
-        <label class="label" for="get-Titre de la ressource"> Titre de la ressource :</label>
-        <input type="text" id="get-Titre" name="Titre" placeholder="Donnez un titre" required>
+        <label class="label" for="getType">Type de ressource :</label>
+        <input type="text" id="getType" name="Type" placeholder="Type de la ressource">
 
-        <label class="label" for="get-Type">Type de ressource :</label>
-        <input type="text" id="get-Type" name="Type" placeholder="Type de la ressource" required>
+        <label class="label" for="getDescription">Description :</label>
+        <input type="text" id="getDescription" name="Description" placeholder="Description de la ressource">
 
-        <label class="label" for="get-Description">Description :</label>
-        <input type="text" id="get-Description" name="Description" placeholder="Description de la ressource" required>
+        <label class="label" for="getLink">Lien :</label>
+        <input type="url" id="getLink" name="Lien" placeholder="Http://..."></textarea>
 
-        <label class="label" for="get-Lien">Lien :</label>
-        <input type="url" id="get-Lien" name="Lien" placeholder="Http://..."></textarea>
-
-        <button id="getDataBtn" type="submit" value="send">Ajouter la ressource</button>
-        <!-- onclick="send()" -->
+        <button id="getDataBtn" type="button" onclick="getValue();" value="send">Ajouter la ressource</button>
     </form>
 
     <footer>
@@ -65,8 +65,8 @@
         <p>Copyright ©2020 by StarkWilder's - Team: Josselin/Ludovic/Cyril</p>
     </footer>
 
-    <script type="text/javascript" src="../Data/listSite.js"></script>
-    <script type="text/javascript" src="../Data/addListSite.js"></script>
+    <script src="../Data/firebaseinit.js"></script>
+    <script src="../Data/addDataFirestore.js"></script>
     <script type="text/javascript" src="../compteur.js"></script>
 </body>
 </html>

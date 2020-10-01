@@ -1,9 +1,6 @@
 
 const listDivGlobal = document.getElementById('listDiv');
 
-
-const db = firebase.firestore();
-
 db.collection("listSite").get().then((querySnapshot) => {
     querySnapshot.forEach((doc) => {
         console.log(`${doc.id}`);
