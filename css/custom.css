@@ -7,6 +7,12 @@
     margin: 0.5em;
 }
 
+.Ajout{
+    color:white;
+    text-align: center;
+    font-size: 80px;
+    text-shadow:0.1em 0.1em 0.2em black;
+
 .filtreElement{
     background-color: transparent;
     font-weight: 500;
@@ -19,5 +25,6 @@
 .filtreElement:hover{
     background-color: #bac63e;
     color: #ffffff;
+
 }
 /** ADD YOUR AWESOME CODES HERE **/
