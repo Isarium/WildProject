@@ -13,6 +13,7 @@
     font-size: 80px;
     text-shadow:0.1em 0.1em 0.2em black;
 
+}
 .filtreElement{
     background-color: transparent;
     font-weight: 500;
@@ -22,10 +23,11 @@
     border-radius: 33px;
     line-height: 21px;
 }
+
 .filtreElement:hover{
     background-color: #bac63e;
     color: #ffffff;
-
+}
 
 /** ADD YOUR AWESOME CODES HERE **/
 
