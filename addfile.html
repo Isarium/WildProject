@@ -41,8 +41,8 @@
     <![endif]-->
 
 </head>
-
 <body class="seo_version">
+
 
     <!-- LOADER -->
     <div id="preloader">
@@ -81,27 +81,108 @@
                                     class="fa fa-angle-double-right"></i>SEO Analysis</a></li>
                     </ul>-->
                     <ul class="nav navbar-nav navbar-right menu-top">
-
-                        <li><a class="active" href="index.html">Home</a></li>
-                        <li><a href=""><img src="./Support/ico/html.png">HTML</a></li>
-                        <li><a href=""><img src="./Support/ico/css.png">CSS</a></li>
-                        <li><a href=""><img src="./Support/ico/java.png">JAVA</a></li>
-                        <li><a href=""><img src="./Support/ico/js.png">JAVASCRIPT</a></li>
-                        <li><a href=""><img src="">GIT/GITHUB</a></li>
-                        <li><a href=""><img src="">OUTILS DEV</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="addfile.html">Ajouter un lien</a></li>
                         <li><a href="contact.html">Contact</a></li>
-
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
 
-    <div id="home" class="parallax first-section" data-stellar-background-ratio="0.4">
-           <div id="listDiv"></div>
-    </div>
-    
+    <div id="home" class="parallax first-section" data-stellar-background-ratio="0.4"
+        style="background-image:url('uploads/parallax_12.jpg');"
+        
+        <div class="container">
+            <p class="Ajout">Veuillez remplir les champs ci-dessous pour ajouter une nouvelle ressource</p>
+        </div>   
+           
+    </div> 
+    <svg id="clouds" class="hidden-xs" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100"
+        viewBox="0 0 85 100" preserveAspectRatio="none">
+        <path d="M-5 100 Q 0 20 5 100 Z
+            M0 100 Q 5 0 10 100
+            M5 100 Q 10 30 15 100
+            M10 100 Q 15 10 20 100
+            M15 100 Q 20 30 25 100
+            M20 100 Q 25 -10 30 100
+            M25 100 Q 30 10 35 100
+            M30 100 Q 35 30 40 100
+            M35 100 Q 40 10 45 100
+            M40 100 Q 45 50 50 100
+            M45 100 Q 50 20 55 100
+            M50 100 Q 55 40 60 100
+            M55 100 Q 60 60 65 100
+            M60 100 Q 65 50 70 100
+            M65 100 Q 70 20 75 100
+            M70 100 Q 75 45 80 100
+            M75 100 Q 80 30 85 100
+            M80 100 Q 85 20 90 100
+            M85 100 Q 90 50 95 100
+            M90 100 Q 95 25 100 100
+            M95 100 Q 100 15 105 100 Z">
+        </path>
+        
+    </svg>
+
+    <div id="support" class="section wb">
+        <div class="container">
+            <!-- <div class="section-title text-center">
+                <h3>Get In Touch</h3>
+                <p class="lead">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, true generator<br> on the Internet. It uses a dictionary of over..</p> -->
+            <!-- </div>end title -->
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="contact_form">
+                        <div id="message"></div>
+                        <form id="contactform" class="row" action="contact.php" name="contactform" method="post">
+                            <fieldset class="row-fluid">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <input type="text" name="first_name" id="first_name" class="form-control" placeholder="Prénom">
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <input type="text" name="last_name" id="last_name" class="form-control" placeholder="Nom">
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <input type="email" name="email" id="email" class="form-control" placeholder="Votre Email">
+                                </div>
+                                <!-- <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <input type="text" name="phone" id="phone" class="form-control" placeholder="Votre Website">
+                                </div> -->
+                                <!-- <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <label class="sr-only">Select Department</label> -->
+                                    <!-- <select name="select_service" id="select_service" class="selectpicker form-control" data-style="btn-white">
+                                        <option value="12">Installation Service</option>
+                                        <option value="Web Design">Web Design</option>
+                                        <option value="Web Development">Web Development</option>
+                                        <option value="Graphic Design">Graphic Design</option>
+                                        <option value="Others">Others</option>
+                                    </select> -->
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <textarea class="form-control" name="comments" id="comments" rows="6" placeholder="Votre pouvez entrez votre message ici ..."></textarea>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-center">
+                                    <button type="submit" value="SEND" id="submit" class="btn btn-light btn-radius btn-brd grd1 btn-block">Posez votre question</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+				<!-- <div class="col-md-6">
+					<div class="map-box">
+						<div id="custom-places" class="small-map"></div>
+					</div>
+				</div> -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+    <!-- <section class="section nopad cac text-center">
+        <a href="#"><h3>Interesting our awesome web design services? Just drop an email to us and get quote for free!</h3></a>
+    </section> -->
+
     <div id="support" class="section db">
         <div class="compteurFooter">
             <p id=annonceCompteur>Ce projet a vu le jour il y a </p> </br>
@@ -179,20 +260,29 @@
                 <div class="col-md-3 col-sm-3 col-xs-12">
                     <div class="widget clearfix">
                         <div class="widget-title">
-                            <h3>Contact Details</h3>
+                            <h3>Information</h3>
                         </div>
 
                         <ul class="footer-links">
-                            <li><a href="mailto:#">StarkWilders's@site.com</a></li>
-                            <li><a href="https://cyrilprudhomme.github.io/WildProject/">www.L'atelier du codeur.com</a></li>
-                            <li>Campus Wild Code School Paris</li>
-                            <li>On donne pas notre 06 à n'importe qui</li>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Contact</a></li>
                         </ul><!-- end links -->
                     </div><!-- end clearfix -->
                 </div><!-- end col -->
 
                 <div class="col-md-2 col-sm-2 col-xs-12">
-                    
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Social</h3>
+                        </div>
+                        <ul class="footer-links social-md">
+                            <li><a class="fb" href="#"><i class="fa fa-facebook"></i> Facebook</a></li>
+                            <li><a class="gi" href="#"><i class="fa fa-github"></i> Github</a></li>
+                            <li><a class="tw" href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
+                            <li><a class="dr" href="#"><i class="fa fa-dribbble"></i> Dribbble</a></li>
+                            <li><a class="pi" href="#"><i class="fa fa-pinterest"></i> Pinterest</a></li>
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
                 </div><!-- end col -->
             </div><!-- end row -->
         </div><!-- end container -->
@@ -218,7 +308,7 @@
 
     <!-- CYRIL FINAL JS -->
     <script type="text/javascript" src="Data/firebaseinit.js"></script>
-    <script type="text/javascript" src="Data/delDataFirestore.js"></script>
+    <script type="text/javascript" src="Data/getDataFirestore.js"></script>
     <script type="text/javascript" src="Data/protectedAdmin.js"></script>
     <script type="text/javascript" src="compteur.js"></script>
 
