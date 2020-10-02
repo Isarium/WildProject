@@ -7,4 +7,17 @@
     margin: 0.5em;
 }
 
+.filtreElementa{
+    background-color: transparent;
+    font-weight: 500;
+    padding: 7px 17px 7px;
+    -webkit-border-radius: 33px;
+    -ms-border-radius: 33px;
+    border-radius: 33px;
+    line-height: 21px;
+}
+.filtreElementa.active{
+    background-color: #bac63e;
+    color: #ffffff;
+}
 /** ADD YOUR AWESOME CODES HERE **/
