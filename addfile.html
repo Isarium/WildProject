@@ -36,6 +36,7 @@
 <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-firestore.js"></script>
 
 </head>
+
 <body class="seo_version">
 
 
@@ -82,12 +83,12 @@
 
     <div id="home" class="parallax first-section" data-stellar-background-ratio="0.4"
         style="background-image:url('uploads/parallax_12.jpg');">
-        
+
         <div class="container">
             <p class="Ajout">Veuillez remplir les champs ci-dessous pour ajouter une nouvelle ressource</p>
-        </div>   
-           
-    </div> 
+        </div>
+
+    </div>
     <svg id="clouds" class="hidden-xs" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100"
         viewBox="0 0 85 100" preserveAspectRatio="none">
         <path d="M-5 100 Q 0 20 5 100 Z
@@ -112,7 +113,7 @@
             M90 100 Q 95 25 100 100
             M95 100 Q 100 15 105 100 Z">
         </path>
-        
+
     </svg>
 
     <div id="support" class="section wb">
@@ -123,33 +124,38 @@
             <!-- </div>end title -->
 
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-11">
                     <div class="contact_form">
                         <div id="message"></div>
-                        <form id="contactform" class="row" action="contact.php" name="contactform" method="post">
+                        <form id="ajoutRessources" class="row" action="" method="get">
                             <fieldset class="row-fluid">
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                    <input type="text" name="first_name" id="first_name" class="form-control" placeholder="Prénom">
+                                <label class="formlabel" for="getName"> Titre de la ressource :</label>
+                                <div class="col col-auto">
+                                    <input type="text" id="getName" class="form-control" name="Titre" placeholder="Donnez un titre" required>
                                 </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                    <input type="text" name="last_name" id="last_name" class="form-control" placeholder="Nom">
+                                <label class="formlabel" for="getType">Type de ressource :</label>
+                                <div class="col col-auto">
+                                    <input type="text" id="getType" class="form-control" name="Type" placeholder="Type de la ressource">
                                 </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                    <input type="email" name="email" id="email" class="form-control" placeholder="Votre Email">
+                                <label class="formlabel" for="getDescription">Description :</label>
+                                <div class="col col-auto">
+                                    <input type="text" id="getDescription" class="form-control" name="Description"
+                                        placeholder="Description de la ressource">
                                 </div>
+                                <label class="formlabel" for="getLink">Lien :</label>
+                                <div class="col col-auto">
 
+                                    <input type="url" id="getLink" class="form-control" name="Lien" placeholder="Http://..."></textarea>
                                 </div>
-                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                    <textarea class="form-control" name="comments" id="comments" rows="6" placeholder="Votre pouvez entrez votre message ici ..."></textarea>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-center">
-                                    <button type="submit" value="SEND" id="submit" class="btn btn-light btn-radius btn-brd grd1 btn-block">Posez votre question</button>
+                                <div class="col col-auto">
+                                    <button id="getDataBtn" class="btn btn-light btn-radius btn-brd grd1 btn-block" type="button" onclick="getValue()" value="send">Ajouter la
+                                        ressource</button>
                                 </div>
                             </fieldset>
                         </form>
                     </div>
                 </div>
-				<!-- <div class="col-md-6">
+                <!-- <div class="col-md-6">
 					<div class="map-box">
 						<div id="custom-places" class="small-map"></div>
 					</div>
@@ -287,10 +293,9 @@
 
     <!-- CYRIL FINAL JS -->
     <script type="text/javascript" src="Data/firebaseinit.js"></script>
-    <script type="text/javascript" src="Data/getDataFirestore.js"></script>
+    <script type="text/javascript" src="Data/addDataFirestore.js"></script>
     <script type="text/javascript" src="Data/protectedAdmin.js"></script>
     <script type="text/javascript" src="compteur.js"></script>
-
 </body>
 
 </html>
