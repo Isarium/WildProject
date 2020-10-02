@@ -2,12 +2,30 @@
     margin: 1em;
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
 }
+.imgNav{
+    height: 30px;
+    margin: 0.5em;
+}
 
 .Ajout{
     color:white;
     text-align: center;
     font-size: 80px;
     text-shadow:0.1em 0.1em 0.2em black;
+
+.filtreElement{
+    background-color: transparent;
+    font-weight: 500;
+    padding: 7px 17px 7px;
+    -webkit-border-radius: 33px;
+    -ms-border-radius: 33px;
+    border-radius: 33px;
+    line-height: 21px;
+}
+.filtreElement:hover{
+    background-color: #bac63e;
+    color: #ffffff;
+
 }
 
 .bom{

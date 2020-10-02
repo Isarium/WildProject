@@ -735,7 +735,14 @@ body.seo_version .first-section {
 body.seo_version .first-section h2 {
     color: #ffffff;
     display: block;
-    font-size: 56px;
+    font-size: 4em;
+    font-weight: bold;
+}
+
+body.seo_version .first-section h4 {
+    color: #ffffff;
+    display: block;
+    font-size: 2em;
     font-weight: bold;
 }
 
