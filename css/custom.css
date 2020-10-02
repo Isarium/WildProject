@@ -7,7 +7,7 @@
     margin: 0.5em;
 }
 
-.filtreElementa{
+.filtreElement{
     background-color: transparent;
     font-weight: 500;
     padding: 7px 17px 7px;
@@ -16,7 +16,7 @@
     border-radius: 33px;
     line-height: 21px;
 }
-.filtreElementa.active{
+.filtreElement:hover{
     background-color: #bac63e;
     color: #ffffff;
 }
