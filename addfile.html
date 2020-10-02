@@ -35,12 +35,8 @@
 <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-firestore.js"></script>
 
-<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
 </head>
+
 <body class="seo_version">
 
 
@@ -60,7 +56,6 @@
             <span class="letter box">G</span>
         </div>
     </div>
-    <!-- END LOADER -->
 
     <header class="header header_style_01">
         <nav class="megamenu navbar navbar-default">
@@ -76,10 +71,6 @@
                     <a class="navbar-brand" href="index.html"><img src="images/logos/logo-seo.png" alt="image"></a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
-                    <!-- <ul class="nav navbar-nav navbar-right hidden-md hidden-sm hidden-xs">
-                        <li><a class="btn-light btn-radius btn-brd top-btn" href="#"><i
-                                    class="fa fa-angle-double-right"></i>SEO Analysis</a></li>
-                    </ul>-->
                     <ul class="nav navbar-nav navbar-right menu-top">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="addfile.html">Ajouter un lien</a></li>
@@ -91,13 +82,12 @@
     </header>
 
     <div id="home" class="parallax first-section" data-stellar-background-ratio="0.4"
-        style="background-image:url('uploads/parallax_12.jpg');"
-        
+        style="background-image:url('uploads/parallax_12.jpg');">
         <div class="container">
-            <p class="Ajout">Veuillez remplir les champs ci-dessous pour ajouter une nouvelle ressource</p>
+            <p class="Ajout">Ajouter un lien</p>
         </div>   
-           
     </div> 
+
     <svg id="clouds" class="hidden-xs" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100"
         viewBox="0 0 85 100" preserveAspectRatio="none">
         <path d="M-5 100 Q 0 20 5 100 Z
@@ -122,55 +112,48 @@
             M90 100 Q 95 25 100 100
             M95 100 Q 100 15 105 100 Z">
         </path>
-        
+
     </svg>
 
     <div id="support" class="section wb">
         <div class="container">
-            <!-- <div class="section-title text-center">
-                <h3>Get In Touch</h3>
-                <p class="lead">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, true generator<br> on the Internet. It uses a dictionary of over..</p> -->
-            <!-- </div>end title -->
+        
+            <div><p class="bom">Veuillez remplir les champs ci-dessous :</p></div>
+            
 
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-11">
                     <div class="contact_form">
                         <div id="message"></div>
-                        <form id="contactform" class="row" action="contact.php" name="contactform" method="post">
+                        <form id="ajoutRessources" class="row" action="" method="get">
                             <fieldset class="row-fluid">
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                    <input type="text" name="first_name" id="first_name" class="form-control" placeholder="Prénom">
+                                <label class="formlabel" for="getName"> Titre de la ressource :</label>
+                                <div class="col col-auto">
+                                    <input type="text" id="getName" class="form-control" name="Titre" placeholder="Donnez un titre" required>
                                 </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                    <input type="text" name="last_name" id="last_name" class="form-control" placeholder="Nom">
+                                <label class="formlabel" for="getType">Type de ressource :</label>
+                                <div class="col col-auto">
+                                    <input type="text" id="getType" class="form-control" name="Type" placeholder="Type de la ressource">
                                 </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                    <input type="email" name="email" id="email" class="form-control" placeholder="Votre Email">
+                                <label class="formlabel" for="getDescription">Description :</label>
+                                <div class="col col-auto">
+                                    <input type="text" id="getDescription" class="form-control" name="Description"
+                                        placeholder="Description de la ressource">
                                 </div>
-                                <!-- <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                    <input type="text" name="phone" id="phone" class="form-control" placeholder="Votre Website">
-                                </div> -->
-                                <!-- <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                    <label class="sr-only">Select Department</label> -->
-                                    <!-- <select name="select_service" id="select_service" class="selectpicker form-control" data-style="btn-white">
-                                        <option value="12">Installation Service</option>
-                                        <option value="Web Design">Web Design</option>
-                                        <option value="Web Development">Web Development</option>
-                                        <option value="Graphic Design">Graphic Design</option>
-                                        <option value="Others">Others</option>
-                                    </select> -->
+                                <label class="formlabel" for="getLink">Lien :</label>
+                                <div class="col col-auto">
+
+                                    <input type="url" id="getLink" class="form-control" name="Lien" placeholder="Http://..."></textarea>
                                 </div>
-                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                    <textarea class="form-control" name="comments" id="comments" rows="6" placeholder="Votre pouvez entrez votre message ici ..."></textarea>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-center">
-                                    <button type="submit" value="SEND" id="submit" class="btn btn-light btn-radius btn-brd grd1 btn-block">Posez votre question</button>
+                                <div class="col col-auto">
+                                    <button id="getDataBtn" class="btn btn-light btn-radius btn-brd grd1 btn-block" type="button" onclick="getValue()" value="send">Ajouter la
+                                        ressource</button>
                                 </div>
                             </fieldset>
                         </form>
                     </div>
                 </div>
-				<!-- <div class="col-md-6">
+                <!-- <div class="col-md-6">
 					<div class="map-box">
 						<div id="custom-places" class="small-map"></div>
 					</div>
@@ -306,10 +289,9 @@
 
     <!-- CYRIL FINAL JS -->
     <script type="text/javascript" src="Data/firebaseinit.js"></script>
-    <script type="text/javascript" src="Data/getDataFirestore.js"></script>
+    <script type="text/javascript" src="Data/addDataFirestore.js"></script>
     <script type="text/javascript" src="Data/protectedAdmin.js"></script>
     <script type="text/javascript" src="compteur.js"></script>
-
 </body>
 
 </html>

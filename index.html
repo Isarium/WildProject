@@ -35,11 +35,6 @@
 <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-firestore.js"></script>
 
-<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
 </head>
 
 <body class="seo_version">
@@ -76,12 +71,14 @@
                     <a class="navbar-brand" href="index.html"><img src="images/logos/logo-seo.png" alt="image"></a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
-                    <!-- <ul class="nav navbar-nav navbar-right hidden-md hidden-sm hidden-xs">
-                        <li><a class="btn-light btn-radius btn-brd top-btn" href="#"><i
-                                    class="fa fa-angle-double-right"></i>SEO Analysis</a></li>
-                    </ul>-->
                     <ul class="nav navbar-nav navbar-right menu-top">
-                        
+
+
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="addfile.html">Ajouter un lien</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+
                 </div>
             </div>
         </nav>
@@ -93,7 +90,8 @@
             <div class="row">
                 <div class="col-md-6 col-sm-12">
                     <div class="big-tagline">
-                        <h2>L'Atelier du codeur<br> Apprendre pour créer</h2>
+                        <h2>L'Atelier du codeur</h2>
+                        <h4>Apprendre pour créer</h4>
                         <p class="lead">
                             <!--With FLaxSEO responsive landing page template, you can showcase your awesome seo
                             services!-->
@@ -136,7 +134,20 @@
         </path>
     </svg>
 
-    <div id="listDiv"></div>
+    <div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right menu-top">
+                <li><a class="filtreElement" href=""><img class="imgNav" src="./Support/ico/html.png">HTML</a></li>
+                <li><a class="filtreElement" href=""><img class="imgNav" src="./Support/ico/css.png">CSS</a></li>
+                <li><a class="filtreElement" href=""><img class="imgNav" src="./Support/ico/java.png">JAVA</a></li>
+                <li><a class="filtreElement" href=""><img class="imgNav" src="./Support/ico/js.png">JAVASCRIPT</a></li>
+                <li><a class="filtreElement" href=""><img class="imgNav" src="">GIT/GITHUB</a></li>
+                <li><a class="filtreElement" href=""><img class="imgNav" src="">OUTILS DEV</a></li>
+            </ul>
+        </div>
+        <div id="listDiv"></div>
+    </div>
+    
 
     <div id="support" class="section db">
         <div>
