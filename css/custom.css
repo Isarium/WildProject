@@ -2,19 +2,18 @@
     margin: 1em;
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
 }
-.imgNav{
-    height: 30px;
-    margin: 0.5em;
+#listMenuDiv div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0px 5px;
 }
-
-.Ajout{
-    color:white;
-    text-align: center;
-    font-size: 80px;
-    text-shadow:0.1em 0.1em 0.2em black;
-}
-.filtreElement{
-    background-color: transparent;
+#listMenuDiv div div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    background-color: #bac63e;
     font-weight: 500;
     padding: 7px 17px 7px;
     -webkit-border-radius: 33px;
@@ -22,12 +21,20 @@
     border-radius: 33px;
     line-height: 21px;
 }
-.filtreElement:hover{
-    background-color: #bac63e;
-    color: #ffffff;
-
+#listMenuDiv div div p{
+    font-size: 2em;
+    margin: 2px;
 }
-
+#listMenuDiv div:hover{
+    background-color: white;
+    color: #bac63e;
+}
+.Ajout{
+    color:white;
+    text-align: center;
+    font-size: 80px;
+    text-shadow:0.1em 0.1em 0.2em black;
+}
 .bom{
     color:darkblue;
     text-align: center;
