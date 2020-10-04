@@ -9,7 +9,6 @@ db.collection("listMenuFiltre").get().then((querySnapshot) => {
         function creatNewHtmlElement(docItem) {
             const theMenuDiv = document.createElement('div');
             theMenuDiv.innerHTML = `
-                
                 <p>${doc.data().icone}</p>
                 <p>${doc.data().menu}</p>
             `;

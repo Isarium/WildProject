@@ -1,13 +1,13 @@
 const itemsListDiv = document.createElement('div');
-const docType = "";
+const iteMenuSelect = "";
 
 db.collection("listSite").get().then((querySnapshot) => {
     querySnapshot.forEach((doc) => {
         const dataList = [doc.data()]
         for (const item of dataList) {
-            if (doc.data().Type == docType) {
+            if (doc.data().Type == iteMenuSelect) {
                 creatNewHtmlElement(item);
-            } else if (docType == "") {
+            } else if (iteMenuSelect == "") {
                 creatNewHtmlElement(item);
             }
         }
