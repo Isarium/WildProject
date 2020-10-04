@@ -13,9 +13,8 @@ db.collection("listMenuFiltre").get().then((querySnapshot) => {
                 <p>${doc.data().menu}</p>
             `;
             const delMenuButton = document.createElement('Button');
-            const delMenuButtonTxt = document.createTextNode("Delete");
-            delMenuButton.appendChild(delMenuButtonTxt);
-            delMenuButton.innerHTML = "Delete";
+            delMenuButton.setAttribute("class", "deleteButtonIcon");
+            delMenuButton.innerHTML = `<i class="fas fa-trash-alt"></i>`;
             delMenuButton.onclick = function () {
                 db.collection("listMenuFiltre").doc(`${doc.id}`).delete().then(function () {
                     console.log("La catégorie a été supprimée avec succès!");
@@ -25,8 +24,9 @@ db.collection("listMenuFiltre").get().then((querySnapshot) => {
                 });
             };
             itemsMenuListDiv.appendChild(theMenuDiv);
-            itemsMenuListDiv.appendChild(delMenuButton);
+            theMenuDiv.appendChild(delMenuButton);
         }
         document.getElementById('listMenuDiv').appendChild(itemsMenuListDiv);
     });
 });
+

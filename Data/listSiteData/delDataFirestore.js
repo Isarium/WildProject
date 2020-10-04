@@ -18,9 +18,8 @@ db.collection("listSite").get().then((querySnapshot) => {
         listLink.href = [doc.data().Link];
         listLink.appendChild(listLinkTxt)
         const delButton = document.createElement('Button');
-        const delButtonTxt = document.createTextNode("Delete");
-        delButton.appendChild(delButtonTxt);
-        delButton.innerHTML = "Delete";
+        delButton.setAttribute("class", "deleteButtonIcon");
+        delButton.innerHTML = `<i class="fas fa-trash-alt"></i>`;
         delButton.onclick = function () { 
             db.collection("listSite").doc(`${doc.id}`).delete().then(function () {
                 console.log("Document successfully deleted!");
