@@ -1,4 +1,3 @@
-
 const listDivGlobal = document.getElementById('listDiv');
 
 db.collection("listSite").get().then((querySnapshot) => {
@@ -18,11 +17,22 @@ db.collection("listSite").get().then((querySnapshot) => {
         const listLinkTxt = document.createTextNode(`${doc.data().Link}`)
         listLink.href = [doc.data().Link];
         listLink.appendChild(listLinkTxt)
+        const delButton = document.createElement('Button');
+        delButton.setAttribute("class", "deleteButtonIcon");
+        delButton.innerHTML = `<i class="fas fa-trash-alt"></i>`;
+        delButton.onclick = function () { 
+            db.collection("listSite").doc(`${doc.id}`).delete().then(function () {
+                console.log("Document successfully deleted!");
+                window.location.reload();
+            }).catch(function (error) {
+                console.error("Error removing document: ", error);
+            });
+         };
         listDivElement.appendChild(listH1);
         listDivElement.appendChild(listType);
         listDivElement.appendChild(listDescription);
-        listDivElement.appendChild(listLink);
+        listDivElement.appendChild(listLink);     
+        listDivElement.appendChild(delButton);
         listDivGlobal.appendChild(listDivElement);
-
     });
 });

@@ -31,9 +31,11 @@
 <!-- Custom CSS -->
 <link rel="stylesheet" href="css/custom.css">
 
-
+<!-- FIREBASE -->
 <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-firestore.js"></script>
+<!-- fontawesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 
 </head>
 
@@ -134,18 +136,11 @@
     <div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right menu-top">
-                <li><a class="filtreElement" href=""><img class="imgNav" src="./Support/ico/html.png">HTML</a></li>
-                <li><a class="filtreElement" href=""><img class="imgNav" src="./Support/ico/css.png">CSS</a></li>
-                <li><a class="filtreElement" href=""><img class="imgNav" src="./Support/ico/java.png">JAVA</a></li>
-                <li><a class="filtreElement" href=""><img class="imgNav" src="./Support/ico/js.png">JAVASCRIPT</a></li>
-                <li><a class="filtreElement" href=""><img class="imgNav" src="./Support/ico/GitHub-Mark.png">GIT/GITHUB</a></li>
-                <li><a class="filtreElement" href=""><img class="imgNav" src="./Support/ico/boite-outils-vertV3.png">OUTILS DEV</a></li>
+                 <div id="listMenuDiv"></div>
             </ul>
         </div>
         <div id="listDiv"></div>
     </div>
-    
-
     <div id="support" class="section db">
             <p id=annonceCompteur>Ce projet a vu le jour il y a </p> </br>
             <div class="countup" id="countup1">
@@ -209,7 +204,8 @@
 
                         <ul class="footer-links">
                             <li><a href="mailto:#">StarkWilders's@site.com</a></li>
-                            <li><a href="https://cyrilprudhomme.github.io/WildProject/">www.L'atelier du codeur.com</a></li>
+                            <li><a href="https://cyrilprudhomme.github.io/WildProject/">www.L'atelier du codeur.com</a>
+                            </li>
                             <li>Campus Wild Code School Paris</li>
                             <li>On donne pas notre 06 à n'importe qui</li>
                         </ul><!-- end links -->
@@ -217,14 +213,14 @@
                 </div><!-- end col -->
 
                 <div class="col-md-3 col-sm-3 col-xs-12">
-                    
-                    </div><!-- end clearfix -->
-                </div><!-- end col -->
 
-                <div class="col-md-2 col-sm-2 col-xs-12">
-                    
-                </div><!-- end col -->
-            </div><!-- end row -->
+                </div><!-- end clearfix -->
+            </div><!-- end col -->
+
+            <div class="col-md-2 col-sm-2 col-xs-12">
+
+            </div><!-- end col -->
+        </div><!-- end row -->
         </div><!-- end container -->
     </footer><!-- end footer -->
 
@@ -247,10 +243,11 @@
     <script src="js/custom.js"></script>
 
     <!-- CYRIL FINAL JS -->
-    <script type="text/javascript" src="Data/firebaseinit.js"></script>
-    <script type="text/javascript" src="Data/getDataFirestore.js"></script>
-    <script type="text/javascript" src="Data/protectedAdmin.js"></script>
-    <script type="text/javascript" src="compteur.js"></script>
+    <script type="text/javascript" src="./Data/firebaseinit.js"></script>
+    <script type="text/javascript" src="./Data/listMenuFiltreData/getMenuData.js"></script>
+    <script type="text/javascript" src="./Data/listSiteData/getDataFirestore.js"></script>
+    <script type="text/javascript" src="./Data/protectedAdmin.js"></script>
+    <script type="text/javascript" src="./compteur.js"></script>
 
 </body>
 

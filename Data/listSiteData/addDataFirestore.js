@@ -1,4 +1,3 @@
-
 function getValue() {
     // Sélectionner l'élément input et récupérer sa valeur
     const inputName = document.getElementById("getName").value;
@@ -13,10 +12,10 @@ function getValue() {
         Link: inputLink,
     })
         .then(function () {
-            alert("Document successfully written!");
+            alert("Site ajoutée avec succès !");
             window.location.reload();
         })
         .catch(function (error) {
-            alert("Error writing document: ", error);
+            alert("Erreur dans l'inscription du site: ", error);
         });
 }
