@@ -26,7 +26,7 @@ db.collection("listMenuFiltre").get().then((querySnapshot) => {
             itemsMenuListDiv.appendChild(theMenuDiv);
             theMenuDiv.appendChild(delMenuButton);
         }
-        document.getElementById('listMenuDiv').appendChild(itemsMenuListDiv);
+        document.getElementById('listMenuDivDel').appendChild(itemsMenuListDiv);
     });
 });
 
