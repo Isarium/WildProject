@@ -1,3 +1,19 @@
+db.collection("listMenuFiltre").get().then((querySnapshot) => {
+    querySnapshot.forEach((doc) => {
+        const dataMenuList = [doc.data()]
+        for (const itemMenu of dataMenuList) {
+            creatNewHtmlElement(itemMenu);
+        }
+        function creatNewHtmlElement(docItem) {
+            const theMenuDiv = document.createElement('option');
+            theMenuDiv.innerHTML = `
+            <option value="${doc.data().menu}">${doc.data().icone}${doc.data().menu}</option>
+            `;
+            document.getElementById('getType').appendChild(theMenuDiv);
+        }
+    });
+});
+
 function getValue() {
     // Sélectionner l'élément input et récupérer sa valeur
     const inputName = document.getElementById("getName").value;
@@ -19,3 +35,4 @@ function getValue() {
             alert("Erreur dans l'inscription du site: ", error);
         });
 }
+
