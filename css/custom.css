@@ -1,6 +1,8 @@
 #listDiv div div {
     margin: 1em;
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+    background-color: #90ad0db4;
+    color: rgb(247, 246, 244);
 }
 #listMenuDiv div {
     display: flex;
@@ -82,6 +84,30 @@
     transform: scale(1.15);
 }
 
+#annonceCompteur{
+    text-align: center;
+    color: rgb(250, 250, 250);
+  }
+  .countup {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .countup .timeel {
+    display: inline-block;
+    padding: 10px;
+    background: #ffffff;
+    margin: 0;
+    color:#90ad0d;
+    min-width: 2.6rem;
+    margin-left: 13px;
+    border-radius: 10px 0 0 10px;
+  }
+  .countup span[class*="timeRef"] {
+    border-radius: 0 10px 10px 0;
+    margin-left: 0;
+    background: #90ad0d;
+    color: rgb(255, 255, 255);
+  }
 
  .space{
      display:flex;
