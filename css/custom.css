@@ -82,4 +82,23 @@
     transform: scale(1.15);
 }
 
+
+ .row{
+     display:flex;
+     flex-direction: row-reverse;
+     
+     
+ }   
+    
+ #space{
+     width: 35em;
+     height: 35em;
+     
+ }
+
+ 
+#submit{
+    margin: 3.3em;
+}
+
 /** ADD YOUR AWESOME CODES HERE **/
