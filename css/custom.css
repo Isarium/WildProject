@@ -27,6 +27,29 @@
     font-size: 2em;
     margin: 2px;
 }
+#listMenuDivDel div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0px 5px;
+}
+#listMenuDivDel div div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    background-color: #bac63e;
+    font-weight: 500;
+    padding: 7px 17px 7px;
+    -webkit-border-radius: 33px;
+    -ms-border-radius: 33px;
+    border-radius: 33px;
+    line-height: 21px;
+}
+#listMenuDivDel div div p {
+    font-size: 2em;
+    margin: 2px;
+}
 #listMenuDiv div:hover {
     background-color: white;
     color: #bac63e;
@@ -51,10 +74,14 @@
     border-radius: 50px;
     border-color: transparent;
     margin: 0.2em 0em 0.2em 0.2em;
+    transform: scale(0.8);
+    transition-property: transform;
+    transition-duration: 1000ms;
 }
 .deleteButtonIcon:hover{
     color: white;
     background-color: red;
+    transform: scale(1.15);
 }
 
 /** ADD YOUR AWESOME CODES HERE **/

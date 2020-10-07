@@ -3,7 +3,7 @@ function getValueMenu() {
     const inputMenuIcon = document.getElementById("getMenuIcon").value;
     const inputMenuName = document.getElementById("getMenuName").value;
 
-    db.collection("listMenuFiltre").doc(`${inputMenuIcon}`).set({
+    db.collection("listMenuFiltre").doc(`${inputMenuName}`).set({
         icone: inputMenuIcon,
         menu: inputMenuName,
     })
